@@ -10,10 +10,15 @@ import { api } from './api-client';
 // api call definitions for auth (types, schemas, requests):
 // these are not part of features as this is a module shared across features
 
-const getUser = async (): Promise<User> => {
-  const response = await api.get('/auth/me');
+const getUser = async (): Promise<User | null> => {
+  try {
+    const response = await api.get('/auth/me');
 
-  return response.data;
+    return response.data;
+  } catch {
+    // Chưa đăng nhập hoặc backend chưa sẵn sàng -> coi như không có user.
+    return null;
+  }
 };
 
 const logout = (): Promise<void> => {
