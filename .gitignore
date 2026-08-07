@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+# lockfiles: du an chuan hoa ve npm (package-lock.json). Bo qua yarn.lock de tranh
+# xung dot package manager tren CI (Cloudflare Pages).
+yarn.lock
+
 # testing
 /coverage
 /test-results/
