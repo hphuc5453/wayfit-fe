@@ -1,0 +1,12 @@
+{
+  // Cau hinh deploy static SPA len Cloudflare Workers (Static Assets).
+  // Khai bao ro thu muc assets de wrangler upload file tinh thay vi tu-do Vite
+  // (co che tu-do yeu cau Vite 6+, du an dang dung Vite 5).
+  "name": "wayfit-fe",
+  "compatibility_date": "2025-11-01",
+  "assets": {
+    "directory": "./dist",
+    // Tra ve /index.html cho moi route khong khop file tinh -> SPA routing hoat dong.
+    "not_found_handling": "single-page-application"
+  }
+}
