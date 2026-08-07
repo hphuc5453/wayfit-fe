@@ -3,7 +3,9 @@ export const paths = {
     path: '/',
     getHref: () => '/',
   },
-
+  planner: { path: '/planner', getHref: () => '/planner' },
+  shop: { path: '/shop', getHref: () => '/shop' },
+  journal: { path: '/journal', getHref: () => '/journal' },
   auth: {
     register: {
       path: '/auth/register',

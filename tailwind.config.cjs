@@ -50,6 +50,10 @@ module.exports = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        brand: {
+          DEFAULT: '#C1440E',   // terracotta/cam gạch như mẫu
+          foreground: '#FFFFFF',
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',
